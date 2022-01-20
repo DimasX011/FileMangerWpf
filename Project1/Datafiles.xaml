@@ -1,0 +1,17 @@
+﻿<Window x:Class="Project1.Datafiles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project1"
+        mc:Ignorable="d"
+        Title="Datafiles" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Path" HorizontalAlignment="Left" Height="43" Margin="40,5,0,0" TextWrapping="Wrap" Text="Путь" VerticalAlignment="Top" Width="742" TextChanged="ChangedPath"/>
+        <TextBlock HorizontalAlignment="Left" Margin="600,54,0,0" TextWrapping="Wrap" Text="Содержимое директории" VerticalAlignment="Top" Height="26" Width="144"/>
+        <Button Content="Показать" HorizontalAlignment="Left" Margin="611,85,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="Data_Show"/>
+        <ListBox x:Name="Data"  HorizontalAlignment="Left" Height="323" Margin="40,54,0,0" VerticalAlignment="Top" Width="537"/>
+        <Button x:Name="Clear" Content="Отчистить" HorizontalAlignment="Left" Margin="611,126,0,0" VerticalAlignment="Top" Width="121" Height="28" Click="Clear_List"/>
+
+    </Grid>
+</Window>
